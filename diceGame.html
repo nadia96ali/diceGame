@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Dice Game &#127922;</title>
+  <script type="text/javascript">
+  /*	if (navigator.userAgent.indexOf('Chrome') >= 0) 
+{
+    window.location.replace("../diceGame_C/diceGame.html");
+}*/
+
+
+       
+  </script>
+</head>
+
+<body onload="roll()">
+<audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3" autoplay ></audio>
+
+  <div class="container">
+    <div class="square" id="first">
+      <img src="" alt="" id="firstDie" class="diceFace">
+    </div>
+    <div class="square" id="second">
+      <img src="" alt="" id="secondDie" class="diceFace">
+    </div>
+    </div>
+    <div id="result">
+      <p id="resultText"></p>
+    </div>
+    <div id="resultP">
+      <p id="resultTextP1">Player 1 - Player 2</p>
+      <p id="resultTextP2"></p>
+    </div>
+  <script type="text/javascript" src="diceGame.js">
+
+  </script>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.8;
+  audio.play();
+});
+  </script>
+</body>
+
+</html>

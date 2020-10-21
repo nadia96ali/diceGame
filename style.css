@@ -1,0 +1,42 @@
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #da6d42;
+  display: inline;
+  position: absolute;
+  border-radius: 12%;
+  border: 5px black;
+}
+#second{
+right: 30%;
+}
+
+.diceFace{
+  height: 100px;
+  width: 100px;
+}
+
+#result,#resultP{
+    display: inline-block;
+  background-color: #e7cfb4;
+  border-radius: 5px;
+  padding: 2%;
+  width: 10%;
+  color: #563232;
+  text-align: center;
+}
+#resultP{
+
+  position: relative;
+  left: 71.5%;
+  top:5%;
+}
+
+body{
+  background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+  margin: 17% 20% 10% 29%;
+}

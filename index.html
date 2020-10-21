@@ -4,37 +4,30 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <title>Dice Game &#127922;</title>
-  <script type="text/javascript">
-  	if (navigator.userAgent.indexOf('Chrome') >= 0) 
-{
-    window.location.replace("diceGameChrome.html");
-}
-
-
-       
-  </script>
 </head>
 
-<body onload="roll()">
-
+<body onload="start()">
 
   <div class="container">
     <div class="square" id="first">
-      <img src="" alt="" id="firstDie" class="diceFace">
+      <img src="waitDice.png" alt="" id="firstDie" class="diceFace">
     </div>
     <div class="square" id="second">
-      <img src="" alt="" id="secondDie" class="diceFace">
+      <img src="waitDice.png" alt="" id="secondDie" class="diceFace">
     </div>
     </div>
     <div id="result">
-      <p id="resultText"></p>
+      <p id="resultText">Waiting for audio enable</p>
     </div>
     <div id="resultP">
-      <p id="resultTextP1">Player 1 - Player 2</p>
+      <p id="resultTextP1">Waiting for audio enable</p>
       <p id="resultTextP2"></p>
     </div>
-  <script type="text/javascript" src="diceGame.js">
+      <button type="button" name="button" id="sound" onclick="playAudio()"><i class='fas fa-volume-mute'></i></button>
+      <button type="button" name="button" id="link"><a href="diceGame.html">Non-Chrome user</a></button>
+  <script type="text/javascript" src="diceGameChrome.js">
 
   </script>
 </body>

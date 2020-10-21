@@ -15,7 +15,24 @@ right: 30%;
   height: 100px;
   width: 100px;
 }
-
+#link{
+  background-color: black;
+  position: absolute;
+  top:15%;
+  left: 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  padding: 1%;
+  box-shadow: 0 2px #da6d42;
+}
+a{
+  text-decoration: none;
+  color:#e7cfb4;
+}
 #result,#resultP{
     display: inline-block;
   background-color: #e7cfb4;

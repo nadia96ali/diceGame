@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>المسبحة الإلكترونية</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+<script src="jquery-3.5.1.min.js"></script>
+<style>
+    .counter-btn {
+        background-color: #0076ff;
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        border-radius: 100px 100px 100px 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px 100px 100px 100px;
+        border: 0 solid #000;
+        color: white;
+        font-size: 24px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .v-c {
+        vertical-align: middle !important;
+    }
+
+    .counter-btn:active {
+        background-color: #0076ff;
+        opacity: .8;
+    }
+
+    .counter-text {
+        font-size: 24px;
+        vertical-align: middle !important;
+    }
+
+    .clear-counter {
+        padding: 1px;
+        padding: 1px;
+        position: absolute;
+        right: 4px;
+    }
+</style>
+</head>
+<body>
+<div class="row">
+<div class="col-12 col-md-6 col-lg-4 col-xlg-3">
+<div class="card border-primary mb-3">
+<div class="card-header counter-text"> الحمدلله</div>
+<div class="card-body text-primary">
+<button class="btn btn-danger clear-counter btn-sm" data-id="0" id="a"><i class="fa fa-undo fa-fw fa-lg"></i></button>
+        <input type="text" name="TextBox" id="TextBox" value="0" />
+
+<div class="counter-btn counter-total counter-total-0 " data-id="0" id="b" value="0">0</div>
+</div>
+</div>
+</div>
+</div>
+<button class="btn btn-danger btn-sm mb-2" onclick="if (!window.__cfRLUnblockHandlers) return false; clearAllCounter()" style="    font-size: 12px;" type="button" data-cf-modified-daadabafef1faf81be4d03df-="">تصفير العدادات </button>
+<script type="text/javascript">
+
+
+	 $(document).ready(function(){
+	 	alert('test');
+
+                $('#a').click( function() {
+                    // var counter = $('#TextBox').val();
+                    // counter++ ;
+                    // $('#TextBox').val(counter);
+                    document.location.href='RiskAssessmentMain.aspx';
+                });
+            });
+        // $(document).ready(function() {
+            // updateNumbers();
+            // $("#0").click(function() {
+            //     var count = $(this).data("id");
+
+            //     $(this).attr('value','6');
+
+
+            // });
+            // $(".clear-counter").click(function() {
+            //     if (confirm("هل تريد تصفير العداد؟ ")) {
+            //         var id = $(this).data("id");
+            //         localStorage.setItem("home" + id, 0);
+            //         $(".counter-total-" + id).text(0);
+            //         $(this).closest(".counter-container").find(".counter-btn").text(0);
+            //     }
+            // });
+        // });
+
+        // function updateNumbers() {
+        //     $(".counter-btn").each(function(i, e) {
+        //         var id = $(e).data("id");
+        //         var u = localStorage.getItem("home" + id);
+        //         if (u && u !== '') {} else {
+        //             u = 0;
+        //         }
+        //         localStorage.setItem("home" + id, u);
+        //         $(".counter-total-" + id).text(u);
+        //     });
+        // }
+
+        // function clearAllCounter() {
+        //     if (confirm("هل تريد تصفير العدادات؟ ")) {
+        //         $('.clear-counter').each(function(i, e) {
+        //             var id = $(e).data("id");
+        //             localStorage.setItem("home" + id, 0);
+        //             $(".counter-total-" + id).text(0);
+        //             $(e).closest(".counter-container").find(".counter-btn").text(0);
+        //         });
+        //     }
+        // }
+    </script>
+</script>
+</body>
+</html>
